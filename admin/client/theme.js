@@ -46,7 +46,7 @@ theme.color = {
 	text:                '#1A1A1A',
 
 	// contextual
-	success:             '#34c240',
+	success:             '#fecf33',
 	create:              '#34c240', // alias for success
 	primary:             '#1385e5',
 	info:                '#1385e5', // alias for primary
@@ -123,7 +123,7 @@ theme.button = {
 	success: {
 		bgColor: theme.color.success,
 		borderColor: blend(theme.color.success, theme.color.body, 60),
-		textColor: theme.color.success,
+		textColor: 'black',
 	},
 	warning: {
 		bgColor: theme.color.warning,
@@ -244,7 +244,7 @@ theme.alert = {
 		success: {
 			background: fade(theme.color.success, 10),
 			border: fade(theme.color.success, 10),
-			text: theme.color.success,
+			text: 'black',
 		},
 		warning: {
 			background: fade(theme.color.warning, 10),

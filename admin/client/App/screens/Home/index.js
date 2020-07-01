@@ -37,10 +37,14 @@ var HomeView = React.createClass({
 	},
 	render () {
 		const spinner = this.getSpinner();
+		const buildType = process.env.NODE_ENV === 'staging' ? 'QA': 'development';
 		return (
 			<Container data-screen-id="home">
 				<div className="dashboard-header">
-					<div className="dashboard-heading">{Keystone.brand}</div>
+					<h3 className="dashboard-heading">{`Hi, ${Keystone.user['name'].split(' ')[0]}.`}</h3>
+					<div>{`You are editing the `}
+					<strong>{buildType}</strong>{` build of ${Keystone.brand}. `} 
+					{buildType === 'QA' ? 'Changes you make will not appear in production until a new build is published.' : ''} </div>
 				</div>
 				<div className="dashboard-groups">
 					{(this.props.error) && (

@@ -43,10 +43,14 @@ var Footer = React.createClass({
 		return (
 			<footer className={css(classes.footer)} data-keystone-footer>
 				<Container>
+				<a href="https://github.com/engagementlab"><img src="https://res.cloudinary.com/engagement-lab-home/image/upload/c_scale,w_80/v1543874087/logos/logo-sm-black.png" /></a>
+				</Container>
+				<Container>
 					<a href={backUrl} tabIndex="-1" className={css(classes.link)}>
-						{brand + (appversion ? " " + appversion : "")}
-					</a>
+						{brand}
+					</a> | 
 					{this.renderUser()}
+					<p>Powered by a customized fork of <a href="https://github.com/engagementlab/keystone" className={css(classes.link)}>Keystone v{version}</a></p>
 				</Container>
 			</footer>
 		);
@@ -55,20 +59,23 @@ var Footer = React.createClass({
 
 /* eslint quote-props: ["error", "as-needed"] */
 const linkHoverAndFocus = {
-	color: theme.color.gray60,
+	color: theme.color.white60,
 	outline: "none"
 };
 const classes = {
 	footer: {
 		boxShadow: "0 -1px 0 rgba(0, 0, 0, 0.1)",
-		color: theme.color.gray40,
 		fontSize: theme.font.size.small,
 		paddingBottom: 30,
 		paddingTop: 40,
-		textAlign: "center"
+		background: "black",
+		color: "white",
+		display: "flex",
+		width: "100%",
+		alignItems: "center"
 	},
 	link: {
-		color: theme.color.gray60,
+		color: '#fecf33',
 
 		":hover": linkHoverAndFocus,
 		":focus": linkHoverAndFocus

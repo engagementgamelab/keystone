@@ -1,9 +1,32 @@
+// Elab fonts
+@font-face {
+	font-family: 'LunchtypeRegular';
+	src: url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943334/homepage-2.0/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+		/* Super modern browsers */
+		url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943334/homepage-2.0/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+		/* Modern browsers */
+		url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943478/homepage-2.0/fonts/Lunchtype22-Regular.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'LunchtypeMedium';
+	src: url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943334/homepage-2.0/fonts/lunchtype22-medium-webfont.woff2') format('woff2'),
+		/* Super modern browsers */
+		url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943334/homepage-2.0/fonts/lunchtype22-medium-webfont.woff') format('woff'),
+		/* Modern browsers */
+		url('https://res.cloudinary.com/engagement-lab-home/raw/upload/v1543943478/homepage-2.0/fonts/Lunchtype22-Medium.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
 //
 // Keystone's Variables
 // ==============================
 
-
-
+@font-family-base: 'LunchtypeRegular';
+@app-primary: #00ab9e;
+@keystone-blue: #fecf33;
+@button-primary-bg: #fecf33;
 
 // Elemental
 // ------------------------------
@@ -16,7 +39,7 @@
 // Common
 // ------------------------------
 
-@body-bg: #fafafa;
+@body-bg: #fff;
 
 @line-height-computed: floor(@font-size-base * @line-height-base); // ~20px
 
