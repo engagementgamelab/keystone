@@ -37,7 +37,7 @@ var HomeView = React.createClass({
 	},
 	render () {
 		const spinner = this.getSpinner();
-		const buildType = process.env.NODE_ENV === 'staging' ? 'QA': 'development';
+		const buildType = Keystone.brand.indexOf('QA') > 0 ? 'QA': 'development';
 		return (
 			<Container data-screen-id="home">
 				<div className="dashboard-header">
